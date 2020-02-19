@@ -17,10 +17,10 @@ python:
   - "3.8"
 
 install:
-  - pip install pipenv
+  - pip install -U pipenv
+  - pipenv install --dev
 
 script:
-  - pipenv install --dev
   - pipenv run flake8
   - pipenv run py.test -sv --cov-config .coveragerc --cov-report html:skip-covered --cov-report term:skip-covered --cov=testcontainers --tb=short tests/
   - codecov
