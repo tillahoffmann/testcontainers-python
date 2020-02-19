@@ -51,10 +51,11 @@ setuptools.setup(
         'mysql': ['sqlalchemy', 'pymysql'],
         'oracle': ['sqlalchemy', 'cx_Oracle'],
         'postgresql': ['sqlalchemy', 'psycopg2-binary'],
-        'selenium': ['selenium==2.53.1'],
+        'selenium': ['selenium'],
         'google-cloud-pubsub': ['google-cloud-pubsub'],
         'mongo': ['pymongo']
     },
     long_description_content_type="text/markdown",
     long_description=long_description,
+    python_requires="~=3.4",
 )

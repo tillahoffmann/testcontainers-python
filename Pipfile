@@ -5,21 +5,8 @@ verify_ssl = true
 ["dev-packages"]
 codecov = "*"
 flake8 = "*"
+"pytest-cov" = "*"
+pytest = "*"
 
 [packages]
-crayons = "*"
-wrapt = "*"
-pipenv = "*"
-blindspin = "*"
-"pytest-cov" = "*"
-"webdriver-manager" = "*"
-pytest = "*"
-docker = "*"
-docker-compose = "*"
-pymongo = "*"
-selenium = "*"
-sqlalchemy = "*"
-pymysql = "*"
-google-cloud-pubsub = "*"
-psycopg2-binary = "*"
-cx-oracle = "*"
+testcontainers = {extras = ["docker-compose", "google-cloud-pubsub", "mongo", "mysql", "oracle", "postgresql", "selenium"],editable = true,path = "."}
